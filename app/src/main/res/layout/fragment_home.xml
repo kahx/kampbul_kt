@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:id="@+id/recyclerView"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recyclerView"
+            android:layout_margin="15dp"
+            android:layout_centerHorizontal="true"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prev"
+                android:text="Geri"/>
+            <TextView
+                android:id="@+id/pageText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3/5"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/next"
+                android:text="İleri"/>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
